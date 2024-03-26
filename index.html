@@ -40,10 +40,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 // This function is used to create a rectangle on the canvas with an upper left coordinate of (50,25) and a length and width of 150x100.
 function draw_recta() {
-  var a_canvas = document.getElementById("a");
-  var a_context = a_canvas.getContext("2d");
-  b_context.fillRect(50, 25, 150, 100);
+  var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
+  var a_context = a_canvas.getContext("2d");//draws context.
+  b_context.fillRect(50, 25, 150, 100);// plots a rectangle that is (50,25,150,100)
 }
+function name_canvas() {
+var a_canvas = document.getElementById("a");//find element in dom for canvas
+var a_context = a_canvas.getContext("2d");// draws context
+a_canvas.fillText("Kripa Philip", 75, 75);// Draws my name "kripa philip" at 75, 75 coordinates
+</script>
 
 
 </script>
@@ -84,7 +89,11 @@ function draw_recta() {
 	<br />
 <div class ="button-container" id="one">
 	<!-- This code is used to make a button to run the rectangle function when clicked. -->	
-	<a href="#one" onclick="draw_recta()"  class="w3-btn w3-black"> Rectangle </a>
+	<a href="#one" onclick="draw_recta()"  class="w3-btn w3-black"> rectangle </a>
+	
+	<!-- This code is used to make a button and run name function when clicked. -->
+	<a href="#two" onclick="name_canvas()"  class="w3-btn w3-black"> My name </a>
+		
 	
 </div>
 		
