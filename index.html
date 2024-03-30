@@ -59,7 +59,8 @@ function image_canvas() {
 	dog.src = "puppy.jpg";// States where the image comes from
 	dog.onload = function() { 
 		console.log("Image loaded successfully."); // Check if image is loaded
-		a_context.drawImage(dog, 0, 0, a_canvas.width a_canvas.height);// draws dog image
+		a_context.drawImage(dog, 0, 0, a_canvas.width, a_canvas.height);// draws dog image
+
   };
 }
 
