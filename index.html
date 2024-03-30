@@ -44,11 +44,11 @@ function draw_recta() {
 	var a_context = a_canvas.getContext("2d");//draws context.
 	b_context.fillRect(50, 25, 150, 100);// plots a rectangle that is (50,25,150,100)
 }
-// This function is used to print my name on the canvas at 75,75
+// This function is used to print my name on the canvas at 15,15
 function name_canvas() {
 	var a_canvas = document.getElementById("a");//find element in dom for canvas
 	var a_context = a_canvas.getContext("2d");// draws context
-	a_canvas.fillText("Kripa Philip", 75, 75);// Draws my name "kripa philip" at 75, 75 coordinates
+	a_canvas.fillText("Kripa Philip", 15, 15);// Draws my name "kripa philip" at 15, 15 coordinates
 }
 // This function is used to add an image from the internet to my canvas.
 function image_canvas() {
@@ -57,7 +57,7 @@ function image_canvas() {
 	var dog = new Image(); //used to create the image of the object
 	dog.src = "puppy.jpg";// States where the image comes from
 	dog.onload = function() { 
-		a_context.drawImage(dog, 0, 0);// draws dog image at 0,0
+		a_context.drawImage(dog, 20, 20);// draws dog image at 20,20
   };
 }
 
