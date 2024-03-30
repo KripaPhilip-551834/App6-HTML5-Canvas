@@ -49,7 +49,7 @@ function draw_recta() {
 function name_canvas() {
 	var a_canvas = document.getElementById("a");//find element in dom for canvas
 	var a_context = a_canvas.getContext("2d");// draws context
-	a_canvas.fillText("Kripa Philip", 15, 15);// Draws my name "kripa philip" at 15, 15 coordinates
+	a_context.fillText("Kripa Philip", 15, 15);// Draws my name "kripa philip" at 15, 15 coordinates
 }
 // This function is used to add an image from the internet to my canvas.
 function image_canvas() {
