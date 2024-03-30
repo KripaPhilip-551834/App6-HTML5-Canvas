@@ -54,10 +54,10 @@ function name_canvas() {
 function image_canvas() {
 	var a_canvas = document.getElementById("a");//find element in dom for canvas
 	var a_context = a_canvas.getContext("2d");// draws context
-	var dog = new Image(); 
-	dog.src = "images/puppy.jpg";
-	dog.onload = function() {
-		
+	var dog = new Image(); //used to create the image of the object
+	dog.src = "puppy.jpg";// States where the image comes from
+	dog.onload = function() { 
+		context.drawImage(dog, 0, 0);// draws dog image at 0,0
   };
 </script>
 </script>
