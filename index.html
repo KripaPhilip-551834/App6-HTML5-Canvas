@@ -58,10 +58,9 @@ function image_canvas() {
 	var dog = new Image(); //used to create the image of the object
 	dog.src = "puppy.jpg";// States where the image comes from
 	dog.onload = function() { 
-		a_context.drawImage(dog, 50, 50);// draws dog image at 50,50
+		a_context.drawImage(dog, 0, 0, a_canvas.width a_canvas.height);// draws dog image at 50,50
   };
 }
-
 
 //This function is used to clear the canvas entirely.
 function clear_canvas() {
