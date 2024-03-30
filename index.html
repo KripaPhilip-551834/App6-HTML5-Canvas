@@ -61,11 +61,13 @@ function image_canvas() {
   };
 }
 
+
 //This function is used to clear the canvas entirely.
 function clear_canvas() {
 	var a_canvas = document.getElementById("a");//find element in dom for canvas
 	var a_context = a_canvas.getContext("2d");// draws context
-	a_context.clearRect(0,0,300,300); //clears the 300x300 pixels of canvas
+	a_context.clearRect(0,0,a_canvas.width,a_canvas.height); //clears the returned number of pixels of canvas
+
 }
 </script>
 
