@@ -42,12 +42,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function draw_recta() {
 	var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
 	var a_context = a_canvas.getContext("2d");//draws context.
-	var rectWidth = 250;
-	var rectHeight = 200;
+	var rectWidth = 150;
+	var rectHeight = 100;
 	var x = (a_canvas.width - rectWidth) / 2;// center the rectangle horizontally
 	var y = (a_canvas.height - rectHeight) / 2;// center the rectangle vertically
 	a_context.fillRect(x, y, rectWidth, rectHeight);
 }
+		
 // This function is used to print my name on the canvas at 15,15
 function name_canvas() {
 	var a_canvas = document.getElementById("a");//find element in dom for canvas
