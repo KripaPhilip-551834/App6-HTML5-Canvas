@@ -59,10 +59,14 @@ function image_canvas() {
 	dog.onload = function() { 
 		a_context.drawImage(dog, 0, 0);// draws dog image at 0,0
   };
-</script>
-</script>
+}
 
-
+//This function is used to clear the canvas entirely.
+function clear_canvas() {
+	var a_canvas = document.getElementById("a");//find element in dom for canvas
+	var a_context = a_canvas.getContext("2d");// draws context
+	a_context.clearRect(0,0,300,300); //clears the 300x300 pixels of canvas
+}
 </script>
 
 
@@ -104,10 +108,13 @@ function image_canvas() {
 	<a href="#one" onclick="draw_recta()"  class="w3-btn w3-black"> rectangle </a>
 	
 	<!-- This code is used to make a button and run name function when clicked. -->
-	<a href="#two" onclick="name_canvas()"  class="w3-btn w3-black"> My name </a>
+	<a href="#two" onclick="name_canvas()"  class="w3-btn w3-black"> my name </a>
 	
 	<!-- This code is used to make a button and run image function when clicked. -->
 	<a href="#three" onclick="image_canvas()"  class="w3-btn w3-black"> puppy image </a>
+	
+	<!-- This code is used to make a button and run clear function when clicked. The style remains such that there is a 15 px margin. -->
+	<a href="#four" onclick="clear_canvas()"  class="w3-btn w3-black"> style= "margin-top: 15 px;" > clear canvas  </a>
 
 	
 
