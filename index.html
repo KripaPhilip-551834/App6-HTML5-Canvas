@@ -40,14 +40,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 // This function is used to create a rectangle on the canvas with an upper left coordinate of (50,25) and a length and width of 150x100.
 function draw_recta() {
-  var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
-  var a_context = a_canvas.getContext("2d");//draws context.
-  b_context.fillRect(50, 25, 150, 100);// plots a rectangle that is (50,25,150,100)
+	var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
+	var a_context = a_canvas.getContext("2d");//draws context.
+	b_context.fillRect(50, 25, 150, 100);// plots a rectangle that is (50,25,150,100)
 }
+// This function is used to print my name on the canvas at 75,75
 function name_canvas() {
-var a_canvas = document.getElementById("a");//find element in dom for canvas
-var a_context = a_canvas.getContext("2d");// draws context
-a_canvas.fillText("Kripa Philip", 75, 75);// Draws my name "kripa philip" at 75, 75 coordinates
+	var a_canvas = document.getElementById("a");//find element in dom for canvas
+	var a_context = a_canvas.getContext("2d");// draws context
+	a_canvas.fillText("Kripa Philip", 75, 75);// Draws my name "kripa philip" at 75, 75 coordinates
+}
+// This function is used to add an image from the internet to my canvas.
+	
 </script>
 
 
