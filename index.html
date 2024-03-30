@@ -42,13 +42,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 function draw_recta() {
 	var a_canvas = document.getElementById("a"); //finds the <canvas> element in the DOM
 	var a_context = a_canvas.getContext("2d");//draws context.
-	b_context.fillRect(50, 25, 150, 100);// plots a rectangle that is (50,25,150,100)
+	b_context.fillRect(50, 25, 250, 200);// plots a rectangle that is (50,25,250,200)
 }
 // This function is used to print my name on the canvas at 15,15
 function name_canvas() {
 	var a_canvas = document.getElementById("a");//find element in dom for canvas
 	var a_context = a_canvas.getContext("2d");// draws context
-	a_canvas.fillText("Kripa Philip", 15, 15);// Draws my name "kripa philip" at 15, 15 coordinates
+	a_canvas.fillText("Kripa Philip", 115, 115);// Draws my name "kripa philip" at 115, 115 coordinates
 }
 // This function is used to add an image from the internet to my canvas.
 function image_canvas() {
@@ -57,7 +57,7 @@ function image_canvas() {
 	var dog = new Image(); //used to create the image of the object
 	dog.src = "puppy.jpg";// States where the image comes from
 	dog.onload = function() { 
-		a_context.drawImage(dog, 20, 20);// draws dog image at 20,20
+		a_context.drawImage(dog, 50, 50);// draws dog image at 50,50
   };
 }
 
@@ -115,9 +115,6 @@ function clear_canvas() {
 	
 	<!-- This code is used to make a button and run clear function when clicked. The style remains such that there is a 15 px margin. -->
 	<br /> <a href="#four" onclick="clear_canvas()"  class="w3-btn w3-black" style= "margin-top: 15px;" > clear canvas  </a>
-
-	
-
 
 	
 </div>
